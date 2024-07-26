@@ -24,8 +24,6 @@ body {
   border-radius: 15px;
   overflow: hidden;
   margin: 2rem;
-  -webkit-box-shadow: 0px 14px 47px -13px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 14px 47px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 47px -13px rgba(0, 0, 0, 0.75);
   background-color: #fff;
 }
@@ -33,7 +31,6 @@ body {
 .navbar {
   background-color: #97144d;
   color: #fff;
-  width: auto;
   border-radius: 5px 5px 0 0;
 }
 
@@ -84,7 +81,6 @@ nav ul li a:focus {
 .input-drop {
   flex: 1;
   min-width: 150px;
-
   color: #97144d;
 }
 
@@ -94,7 +90,6 @@ nav ul li a:focus {
   color: #fff;
   background-color: #97144d;
   border: 2px solid #97144d;
-
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -124,10 +119,12 @@ hr {
   flex: 1;
   min-width: 280px;
 }
+
 .date {
   color: #848484;
   font-size: 0.8rem;
 }
+
 .location {
   color: #525252;
   font-size: 1.5rem;
@@ -141,10 +138,6 @@ hr {
 .heading-cont {
   margin: 1rem;
   display: flex;
-  gap: 15rem;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: stretch;
   justify-content: space-between;
   align-items: center;
 }
@@ -162,39 +155,35 @@ hr {
 
 .card-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 2rem;
-  overflow: hidden;
-  background-color: #fff;
+  justify-content: center;
 }
 
 .card {
   display: flex;
-  align-items: start;
-  justify-content: center;
   flex-direction: column;
-  overflow: hidden;
   margin: 1rem;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   border-radius: 12px;
   background-color: #fff;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
 }
 
 .card-content {
   padding: 1rem;
   display: flex;
-  align-items: start;
-  justify-content: start;
-  gap: 8px;
   flex-direction: column;
+  gap: 8px;
 }
 
 .category {
   display: flex;
-  justify-content: center;
   align-items: center;
   color: #97144d;
   padding: 0.1rem;
@@ -207,24 +196,25 @@ hr {
   font-size: 0.8rem;
 }
 
+.card-location {
+  font-size: 1rem;
+  color: #525252;
+}
+
 .trav-detail {
   display: flex;
-  align-items: center;
-  justify-content: start;
   gap: 1rem;
-
   color: #848484;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .input-sec {
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .input,
