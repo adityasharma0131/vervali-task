@@ -1,0 +1,239 @@
+/* Google Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.bgbox {
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 2rem;
+  -webkit-box-shadow: 0px 14px 47px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 47px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 47px -13px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: #97144d;
+  color: #fff;
+  width: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+nav {
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #fff;
+  color: #97144d;
+}
+
+.input-sec {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.input,
+.input-drop {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.input {
+  flex: 1;
+  min-width: 280px;
+  color: #97144d;
+}
+
+.input-drop {
+  flex: 1;
+  min-width: 150px;
+
+  color: #97144d;
+}
+
+.search {
+  padding: 1rem;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #97144d;
+  border: 2px solid #97144d;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search:hover {
+  color: #97144d;
+  background-color: #fff;
+}
+
+hr {
+  border: 1px dashed #aeaeae;
+  margin: 2rem 0;
+}
+
+.recent-search {
+  padding: 0 1rem;
+}
+
+.date-day-location {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.date-day-location li {
+  flex: 1;
+  min-width: 280px;
+}
+.date {
+  color: #848484;
+  font-size: 0.8rem;
+}
+.location {
+  color: #525252;
+  font-size: 1.5rem;
+}
+
+.room-guest {
+  color: #a5a5a5;
+  font-size: 0.8rem;
+}
+
+.heading-cont {
+  margin: 1rem;
+  display: flex;
+  gap: 15rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-all {
+  color: #97144d;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.heading {
+  font-size: 1.3rem;
+  color: #525252;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 1rem;
+  border: 1px solid #000;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #97144d;
+  padding: 0.1rem;
+  border-radius: 10px;
+  background-color: rgba(215, 20, 104, 0.293);
+}
+
+.card-date {
+  color: #848484;
+  font-size: 0.8rem;
+}
+
+.trav-detail {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+
+  color: #848484;
+  font-size: 0.6rem;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-sec {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input,
+  .input-drop,
+  .search {
+    width: 100%;
+  }
+
+  .date-day-location {
+    flex-direction: column;
+  }
+}

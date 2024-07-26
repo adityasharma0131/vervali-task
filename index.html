@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bgbox">
+      <header class="navbar">
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-plane"></i> Flights</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-building"></i> Hotels</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-mountain-sun"></i> Experience</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-trophy"></i> Reward Store</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-coins"></i>Points/Miles Transfer</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="input-sec">
+        <input
+          class="input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Search by hotel name/ location"
+          aria-label="Search by hotel name or location"
+        />
+        <div class="input-drop-sec">
+          <input
+            type="datetime-local"
+            name="checkin"
+            id="checkin"
+            class="input-drop"
+            placeholder="Check in"
+            aria-label="Check in"
+          />
+          <input
+            type="datetime-local"
+            name="checkout"
+            id="checkout"
+            class="input-drop"
+            placeholder="Check out"
+            aria-label="Check out"
+          />
+        </div>
+        <select
+          name="roomguest"
+          id="roomguest"
+          class="input-drop"
+          aria-label="Room and Guest"
+        >
+          <option value="" selected disabled>Room & Guest</option>
+          <option value="1room">1 Room</option>
+          <option value="2rooms">2 Rooms</option>
+          <option value="3rooms">3 Rooms</option>
+        </select>
+        <button class="search">Search</button>
+      </section>
+      <hr />
+      <section class="recent-search">
+        <h1>Recent Searches</h1>
+        <ul class="date-day-location">
+          <li>
+            <p class="date">Sat 30 May '24 - Mon 02 Jun '24</p>
+            <h3 class="location">Goa</h3>
+            <h3 class="room-guest">1 Room 2 Adults</h3>
+          </li>
+          <li>
+            <p class="date">Sat 30 May '24 - Mon 02 Jun '24</p>
+            <h3 class="location">Goa</h3>
+            <h3 class="room-guest">1 Room 2 Adults</h3>
+          </li>
+          <li>
+            <p class="date">Sat 30 May '24 - Mon 02 Jun '24</p>
+            <h3 class="location">Goa</h3>
+            <h3 class="room-guest">1 Room 2 Adults</h3>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="bgbox">
+      <div class="heading-cont">
+        <h1 class="heading">Upcoming Bookings</h1>
+        <h1 class="view-all">View All <i class="fa-solid fa-arrow-right"></i></h1>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img class="card-img" src="https://picsum.photos/250/200" alt="location" />
+          <div class="card-content">
+  
+            <p class="category"><i class="fa-solid fa-plane"></i> Flights</p>
+            <p class="card-date">Friday 24 May'24</p>
+            <p class="card-location">Mumbai to Goa</p>
+            <div class="trav-detail">
+              <p>2 Travelers</p>
+              <p>Economy</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://picsum.photos/250/200" alt="location" />
+          <div class="card-content">
+  
+            <p class="category"><i class="fa-solid fa-plane"></i> Flights</p>
+            <p class="card-date">Friday 24 May'24</p>
+            <p class="card-location">Mumbai to Goa</p>
+            <div class="trav-detail">
+              <p>2 Travelers</p>
+              <p>Economy</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://picsum.photos/250/200" alt="location" />
+          <div class="card-content">
+  
+            <p class="category"><i class="fa-solid fa-plane"></i> Flights</p>
+            <p class="card-date">Friday 24 May'24</p>
+            <p class="card-location">Mumbai to Goa</p>
+            <div class="trav-detail">
+              <p>2 Travelers</p>
+              <p>Economy</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://picsum.photos/250/200" alt="location" />
+          <div class="card-content">
+  
+            <p class="category"><i class="fa-solid fa-plane"></i> Flights</p>
+            <p class="card-date">Friday 24 May'24</p>
+            <p class="card-location">Mumbai to Goa</p>
+            <div class="trav-detail">
+              <p>2 Travelers</p>
+              <p>Economy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
